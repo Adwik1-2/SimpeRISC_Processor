@@ -3,7 +3,7 @@ module InstructionMemory (
     input wire [31:0] addr,
     output wire [31:0] inst    
 );
-    reg [31:0] memory [0:1023]; //we acan use any nuber than 1023 acordingly change indexing like 9:2
+    reg [31:0] memory [0:15]; // only 16 entries
     initial 
     begin
        $readmemh("program.hex", memory); // Load the instruction memory from a file
