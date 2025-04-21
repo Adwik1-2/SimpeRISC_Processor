@@ -45,10 +45,3 @@ The project is organized into the following files and modules:
 3. Use the `program.hex` file to load custom instructions for execution.
 4. Analyze the output using the `cpu.vcd` file in a waveform viewer.
 
-## Future Work
-- Extend the instruction set to include more RISC instructions.
-- Optimize the design for better performance.
-- Add support for pipelining.
-
-## Author
-This project was developed by [Your Name].
