@@ -3,6 +3,19 @@
 ## Overview
 This project implements a SimpleRISC Processor using Verilog. The processor is designed to execute a subset of RISC instructions and includes various modules for instruction decoding, execution, memory access, and write-back stages. The design is modular, making it easy to understand and extend.
 
+## How to run
+### 1.Run the following command in powershell -
+```
+iverilog -o cpu_sim 4_bit_mux.v add.v adder.v aftermem.v ALU_block.v ALU.v BranchEXECU.v branchPC.v ControlUnit.v DataMemory.v immediate_branch.v immx_op1.v immx_op2.v InstructionMemory.v memory_unit.v mux.v mux0-3.v pc_plus_4.v reg_write.v register_files_access4.v RegisterFile.v RegisterFilesAccess.v SimpleRISC_Processor.v subtract.v subtractor.v testbench.v
+```
+
+### 2.The output file will be saved as - "cpu_sim"
+
+### 3.Run the follwing command to simulate 
+```
+vvp cpu_sim
+```
+
 ## Project Structure
 The project is organized into the following files and modules:
 
